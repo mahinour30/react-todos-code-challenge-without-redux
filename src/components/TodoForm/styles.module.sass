@@ -1,0 +1,27 @@
+.input
+    box-sizing: border-box
+    width: 91%
+    padding: 20px 30px
+    font-size: 2rem
+    margin-bottom: 25px
+    border: 1px solid #888
+    outline: 0
+.cont
+    flex-direction: column
+
+@mixin button()
+    display: inline-block
+    padding: 10px 20px
+    border-radius: 5px
+    border: 0
+    margin-right: 0px
+    font-size: 1rem
+    &:last-child
+    margin-left: 25px
+
+
+.todoBtn
+    @include button()
+    background-color: grey
+    color: #fff
+    margin-bottom: 25px
