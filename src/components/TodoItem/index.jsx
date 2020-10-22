@@ -31,7 +31,6 @@ function TodoItem({text, todo, todos, setTodos}) {
 
   const editTextHandler= (e) =>{
     setEditText(e.target.value);
-    const val = e.target.value;
   };
   const editHandler= (e) =>{
     setTodos(todos.map(item=>{
@@ -40,6 +39,7 @@ function TodoItem({text, todo, todos, setTodos}) {
           ...item, text :editText
         };
       }
+      return item;
     }
    ))
   };
